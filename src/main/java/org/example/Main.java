@@ -10,13 +10,17 @@ public class Main {
     public static void main(String[] args) throws IOException {
 
         List<Student> studentDataStorage = new ArrayList<>(XLSXFileReader.getStudentData());
-        List<University> universityDataStorage = new ArrayList<>();
+        List<University> universityDataStorage = new ArrayList<>(XLSXFileReader.getUniversityData());
 
         for (Student student: studentDataStorage) {
-            System.out.println(studentDataStorage);
+            System.out.println(student);
         }
 
-//        XLSXFileReader.getStudentData();
+        for (University university: universityDataStorage) {
+            System.out.println(university);
+        }
+
+
 
 
 
