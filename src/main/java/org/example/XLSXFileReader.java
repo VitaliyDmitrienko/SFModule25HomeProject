@@ -13,6 +13,12 @@ import java.util.*;
 
 
 public class XLSXFileReader {
+
+    private XLSXFileReader (){
+        System.out.println("Private constructor.");
+        System.out.println("Forbidden to create this class instance.");
+    }
+
     public static ArrayList<Student> getStudentData() throws IOException {
 
         ArrayList<Student> studentDataStorageExtractor = new ArrayList<>();

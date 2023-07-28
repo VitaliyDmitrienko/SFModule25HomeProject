@@ -10,6 +10,11 @@ public class Main {
 
     public static void main(String[] args) throws IOException {
 
+//        Class XLSXFileReader() has private constructor & forbidden to create instance
+//        System.out.println(new XLSXFileReader());
+
+
+
         List<Student> studentDataStorage = new ArrayList<>(XLSXFileReader.getStudentData());
         List<University> universityDataStorage = new ArrayList<>(XLSXFileReader.getUniversityData());
 
