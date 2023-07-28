@@ -1,26 +1,28 @@
+// Module 25.9 intermediate project (XLSX-file reader)
 package org.example;
 
 public enum StudyProfile {
-    JURISPRUDENCE ("Юриспруденция"),
-    MANAGEMENT ("Делопроизводство"),
-    FINANCIAL ("Финансы"),
-    ADMINISTRATION ("Администрирование"),
-    MEDICINE ("Медицина"),
-    SURGERY("Хирургия"),
-    THERAPY ("Терапия"),
-    PSYCHOLOGY ("Психология"),
+    ADMINISTRATION("Администрирование"),
     CARDIOLOGY("Кардиология"),
-    PHLEBOLOGY("Флебология"),
+    FINANCIAL("Финансы"),
     GASTROENTEROLOGY("Гастроэнтерология"),
-    PHYSICS("Физика"),
+    JURISPRUDENCE("Юриспруденция"),
     LINGUISTICS("Лингвистика"),
-    MATHEMATICS("Математика");
+    MANAGEMENT("Делопроизводство"),
+    MATHEMATICS("Математика"),
+    MEDICINE("Медицина"),
+    PHLEBOLOGY("Флебология"),
+    PHYSICS("Физика"),
+    PSYCHOLOGY("Психология"),
+    SURGERY("Хирургия"),
+    THERAPY("Терапия");
 
-    private String profileName;
+    private final String profileName;
 
-    StudyProfile (String profileName) {
+    StudyProfile(String profileName) {
         this.profileName = profileName;
     }
+
     public String getProfileName() {
         return this.profileName;
     }

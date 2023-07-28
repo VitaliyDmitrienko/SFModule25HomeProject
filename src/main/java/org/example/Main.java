@@ -1,3 +1,4 @@
+// Module 25.9 intermediate project (XLSX-file reader)
 package org.example;
 
 
@@ -15,17 +16,12 @@ public class Main {
         for (Student student: studentDataStorage) {
             System.out.println(student);
         }
+        System.out.println();
 
         for (University university: universityDataStorage) {
             System.out.println(university);
         }
-
-
-
-
-
-
-
+        System.out.println();
 
     }
 }
